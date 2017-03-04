@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="entry.js"></script>
+	<script type="text/javascript" src="transfer.js"></script>
+	<meta charset="ISO-8859-1">
+	<title>Blue Bank</title>
+</head>
+<body onload="clean()">
+	<div class="row">
+		<div class="col-md-4">
+			<label>Document</label>
+			<input type="text" id="documentFrom" class="form-control">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<label>Agency</label>
+			<input type="text" id="agencyCodeFrom" class="form-control">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<label>Account Number</label>
+			<input type="text" id="accountNumberFrom" class="form-control">
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-4" style="text-align: center;">
+			<button id="btnEntry" onclick="validateAccount()" class="btn btn-default">Entry</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="transfer.js"></script>
+	<script type="text/javascript" src="entry.js"></script>
+	<meta charset="ISO-8859-1">
+	<title>Blue Bank</title>
+</head>
+<body onload="fillInData()">
+
+	<div class="row">
+		<div class="col-md-3">
+			<label>Name</label>
+			<input type="text" id="nameFrom" readonly="readonly" class="form-control">
+		</div>
+		<div class="col-md-3">
+			<label>Agency</label>
+			<input type="text" id="agencyCodeFrom" readonly="readonly" class="form-control">
+		</div>
+		<div class="col-md-3">
+			<label>Account Number</label>
+			<input type="text" id="accountNumberFrom" readonly="readonly" class="form-control">
+		</div>
+		<div class="col-md-2">
+			<label>Balance</label>
+			<div class="input-group">
+				<span class="input-group-addon">R$</span>
+				<input type="text" id="balanceAvailableFrom" readonly="readonly" class="form-control">
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-3">
+			<label>Document</label>
+			<input type="text" id="documentTo" class="form-control" data-transfer>
+		</div>
+		<div class="col-md-3">
+			<label>Agency</label>
+			<input type="text" id="agencyCodeTo" class="form-control" data-transfer>
+		</div>
+		<div class="col-md-3">
+			<label>Account Number</label>
+			<input type="text" id="accountNumberTo" class="form-control" data-transfer>
+		</div>
+		<div class="col-md-2">
+			<label>Transfer Value</label>
+			<div class="input-group">
+				<span class="input-group-addon">R$</span>
+				<input type="text" id="transferValue" class="form-control" data-transfer>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-11" style="text-align: center;">
+			<button id="btnTransfer" onclick="transfer()" class="btn btn-default">Transfer</button>
+			&nbsp;
+			<button id="btnExit" onclick="exit()" class="btn btn-default">Exit</button>
+		</div>
+	</div>
+</body>
+</html>

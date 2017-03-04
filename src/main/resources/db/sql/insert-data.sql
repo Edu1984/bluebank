@@ -1,0 +1,4 @@
+DELETE FROM Accountant;
+
+INSERT INTO Accountant VALUES (1, 'Eduardo', '34545666302', '9512', '60589', 10000.00);
+INSERT INTO Accountant VALUES (2, 'Simone', '31534343873', '9512', '60590', 9000.00);
